@@ -9,7 +9,7 @@ import Modal from "@mui/material/Modal";
 import MySlider from "../../Components/Slider/Slider";
 
 const style = {
-  position: "absolute" as "absolute",
+  position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
