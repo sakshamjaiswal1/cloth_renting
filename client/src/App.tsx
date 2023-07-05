@@ -1,9 +1,10 @@
 import "./App.css";
+import SingleProduct from "./Pages/SingleProduct";
 
 function App() {
   return (
-    <div className=" mt-[200px] text-white  bg-[#000] px-[30px] py-[10px]">
-      Hello
+    <div className="">
+      <SingleProduct />
     </div>
   );
 }
