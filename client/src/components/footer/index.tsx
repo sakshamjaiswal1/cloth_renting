@@ -1,8 +1,3 @@
-import React from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-
 const Footer = () => {
   return (
     <div className="bg-black h-[14rem] w-[100%]">
@@ -23,15 +18,13 @@ const Footer = () => {
             <p className="text-white">Blog</p>
           </div>
         </div>
-        <div className="flex align-middle gap-[0.4rem]">
-          <BsTwitter style={{ color: "white" }} />
-          <FaFacebookF style={{ color: "white" }} />
-          <BsInstagram style={{ color: "white" }} />
-        </div>
+        <div className="flex align-middle gap-[0.4rem]"></div>
       </div>
 
       <div className="flex w-[80%] justify-between m-auto flex-start pt-[1rem]">
-        <p className="text-white text-[13px]">Copyright © 2019 Stylease. All Rights Reserved</p>
+        <p className="text-white text-[13px]">
+          Copyright © 2019 Stylease. All Rights Reserved
+        </p>
         <p className="text-white text-[12px]">Powered By Ekommerce360</p>
       </div>
     </div>

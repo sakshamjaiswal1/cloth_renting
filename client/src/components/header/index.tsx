@@ -1,11 +1,11 @@
-import cart from "../../Assets/home/cart.svg";
+import cart from "../../assets/home/cart.svg";
 import Profile from "../../assets/home/profile";
-import search from "../../Assets/home/search.svg";
+import search from "../../assets/home/search.svg";
 
 function Header({ className }: { className?: string }) {
   return (
     <header
-      className={`${className} flex items-center justify-between w-full pl-[70px] pr-[30px] py-[30px] sticky top-0 z-[1]`}
+      className={`${className} flex items-center justify-between w-full pl-[70px] pr-[30px] py-[30px] sticky top-0 z-[1] `}
     >
       <div className="w-[106px] h-[80px]">
         <img
@@ -14,7 +14,7 @@ function Header({ className }: { className?: string }) {
           className="h-full w-full"
         />
       </div>
-      <ul className="flex items-center gap-x-[20px] leading-[25px] text-[14px] tracking-[0px] text-white">
+      <ul className="flex items-center gap-x-[20px] leading-[25px] text-[14px] tracking-[0px] ">
         <li>
           <a href="">WOMENS WEAR </a> <span className={``}></span>
         </li>

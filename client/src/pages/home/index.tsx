@@ -3,7 +3,7 @@ import Header from "../../components/header";
 function Home() {
   return (
     <div className="">
-      <Header className="" />
+      <Header className="text-white" />
       <section className="  h-full w-full">
         <div className="h-[1000px] w-full relative -mt-[140px]">
           <img
