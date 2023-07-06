@@ -6,7 +6,7 @@ import Select from "@mui/material/Select";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import MySlider from "../../Components/Slider/Slider";
+import MySlider from "../../components/slider";
 
 const style = {
   position: "absolute",

@@ -1,10 +1,6 @@
 import "./App.css";
 
-import Footer from "./Components/Footer/Footer";
-import SingleProduct from "./Pages/SingleProduct/SingleProduct";
-
-import Home from "./Pages/home";
-
+import Home from "./pages/home";
 
 function App() {
   return (
@@ -14,7 +10,6 @@ function App() {
       {/* <Footer /> */}
 
       <Home />
-
     </div>
   );
 }

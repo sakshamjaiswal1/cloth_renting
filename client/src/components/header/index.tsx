@@ -1,5 +1,5 @@
 import cart from "../../Assets/home/cart.svg";
-import Profile from "../../Assets/home/profile";
+import Profile from "../../assets/home/profile";
 import search from "../../Assets/home/search.svg";
 
 function Header({ className }: { className?: string }) {
