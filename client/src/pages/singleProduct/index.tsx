@@ -7,8 +7,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import MySlider from "../../components/slider";
-import Footer from "../../components/footer";
-import Header from "../../components/header";
+import Footer from "../../components/common/footer";
+import Header from "../../components/common/header";
 
 const style = {
   position: "absolute",

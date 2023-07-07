@@ -1,5 +1,5 @@
-import Footer from "../../components/footer";
-import Header from "../../components/header";
+import Footer from "../../components/common/footer";
+import Header from "../../components/common/header";
 
 function Home() {
   return (
@@ -41,7 +41,7 @@ function Home() {
           />
         </div>
       </section>
-        <Footer />
+      <Footer />
     </div>
   );
 }
