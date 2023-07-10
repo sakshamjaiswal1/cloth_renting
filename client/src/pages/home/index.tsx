@@ -1,5 +1,6 @@
 import Footer from "../../components/common/footer";
 import Header from "../../components/common/header";
+import ChoiceSection from "../../components/home/choiceSection";
 
 function Home() {
   return (
@@ -41,6 +42,7 @@ function Home() {
           />
         </div>
       </section>
+      <ChoiceSection />
       <Footer />
     </div>
   );
