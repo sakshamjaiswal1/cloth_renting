@@ -1,6 +1,6 @@
-import cart from "../../assets/home/cart.svg";
-import Profile from "../../assets/home/profile";
-import search from "../../assets/home/search.svg";
+import cart from "../../../assets/home/cart.svg";
+import Profile from "../../../assets/home/profile";
+import search from "../../../assets/home/search.svg";
 
 function Header({ className }: { className?: string }) {
   return (
