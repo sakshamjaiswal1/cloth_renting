@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="">
       <Header className="text-white" />
-      <section className="  h-full w-full">
+      <section className="h-full w-full">
         <div className="h-[1000px] w-full relative -mt-[140px]">
           <img
             src="https://cdn.shopify.com/s/files/1/0086/9177/7632/files/JR2_7050.jpg?v=1613782300"
