@@ -1,5 +1,5 @@
 * {
-  font-family: 'Noto Sans', sans-serif !important;
+  font-family: "Noto Sans", sans-serif !important;
   border: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
@@ -198,4 +198,7 @@ textarea {
 
 .utility__bounce {
   animation: utility__bounceKeyframe 2s infinite;
+}
+.merriweather-font {
+  font-family: "Merriweather", serif !important;
 }

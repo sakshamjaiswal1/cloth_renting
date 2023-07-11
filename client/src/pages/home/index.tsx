@@ -1,6 +1,7 @@
 import Footer from "../../components/common/footer";
 import Header from "../../components/common/header";
 import ChoiceSection from "../../components/home/choiceSection";
+import ScoopSection from "../../components/home/scoopSection";
 
 function Home() {
   return (
@@ -43,6 +44,7 @@ function Home() {
         </div>
       </section>
       <ChoiceSection />
+      <ScoopSection />
       <Footer />
     </div>
   );
