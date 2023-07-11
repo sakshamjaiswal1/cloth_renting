@@ -6,6 +6,8 @@ import SingleProduct from "./pages/singleProduct";
 import WomenClothesPage from "./pages/womenClothesPage";
 import MensClothesPage from "./pages/menClothesPage";
 import AboutRentCause from "./pages/aboutRentCause";
+import LoginPage from "./pages/loginPage/loginPage";
+import RegisterPage from "./pages/registerPage/registerPage";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/womenClothes" element={<WomenClothesPage />} />
         <Route path="/menClothes" element={<MensClothesPage />} />
         <Route path="/aboutRentCause" element={<AboutRentCause />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </div>
   );
