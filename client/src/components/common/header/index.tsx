@@ -16,14 +16,14 @@ function Header({ className }: { className?: string }) {
       </div>
       <ul className="flex items-center gap-x-[20px] leading-[25px] text-[14px] tracking-[0px] ">
         <li>
-          <a href="">WOMENS WEAR </a> <span className={``}></span>
+          <a href="/womenClothes">WOMENS WEAR </a> <span className={``}></span>
         </li>
         <li>
-          <a href="">MENS WEAR</a>
+          <a href="/menClothes">MENS WEAR</a>
         </li>
         <li>
           {" "}
-          <a href="">RENT FOR CAUSE</a>
+          <a href="/aboutRentCause">RENT FOR CAUSE</a>
         </li>
         <li>
           {" "}
