@@ -3,6 +3,9 @@ import Header from "../../components/common/header";
 import ChoiceSection from "../../components/home/choiceSection";
 import ImageSection from "../../components/home/imageSection";
 import ScoopSection from "../../components/home/scoopSection";
+import ScoopSectionThree from "../../components/home/scoopSectionThree";
+import ScoopSectionTwo from "../../components/home/scoopSectionTwo";
+// import ScoopSectionTwo from "../../components/home/scoopSectionTwo";
 
 function Home() {
   return (
@@ -47,6 +50,8 @@ function Home() {
       <ChoiceSection />
       <ScoopSection />
       <ImageSection />
+      <ScoopSectionTwo />
+      <ScoopSectionThree />
       <Footer />
     </div>
   );
