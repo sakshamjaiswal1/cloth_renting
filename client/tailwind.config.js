@@ -7,6 +7,7 @@ export default {
       "primary-red": "#DF3C4B",
       white: "#fff",
       black: "#2B2D3C",
+      mainColor:'#2b2d3c'
     },
     screens: {
       "2xl": { max: "1535px" },
