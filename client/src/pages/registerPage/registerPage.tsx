@@ -1,4 +1,3 @@
-import React from "react";
 import registerSvg from "../../assets/registerPage/registerSvg.svg";
 import Header from "../../components/common/header";
 import Footer from "../../components/common/footer";

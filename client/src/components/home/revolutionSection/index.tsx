@@ -1,5 +1,3 @@
-import React from "react";
-
 const RevolutionSection = () => {
   return (
     <div className="px-[3rem] py-[2rem] w-full h-full text-center">

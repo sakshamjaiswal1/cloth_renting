@@ -1,5 +1,3 @@
-import React from "react";
-
 const ScoopSectionThree = () => {
   return (
     <section className="py-[10px] px-[10px] flex items-center ">

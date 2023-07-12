@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import loginSvg from "../../assets/loginPage/login_svg.svg";
 import Header from "../../components/common/header";

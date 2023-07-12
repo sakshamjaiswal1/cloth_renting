@@ -1,5 +1,4 @@
-import React from "react";
-import rentCauseData from "./data.js";
+import { rentCauseData } from "./data.ts";
 import Header from "../../components/common/header/index.js";
 
 const AboutRentCause = () => {
@@ -40,6 +39,7 @@ const AboutRentCause = () => {
             alt=""
           />
           <div className="grid grid-cols-2 gap-[1rem]">
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             {rentCauseData.map((items: any) => (
               <div key={items.id}>
                 <a target="blank" href={items.link}>

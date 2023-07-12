@@ -1,5 +1,3 @@
-import React from "react";
-
 const ImageSection = () => {
   return (
     <div className="flex justify-between h-full w-full ">

@@ -1,4 +1,4 @@
-const rentCauseData = [
+export const rentCauseData = [
   {
     id: 1,
     img: "https://cdn.shopify.com/s/files/1/0086/9177/7632/files/Letters_of_Love_Logo_1080_large.jpg?v=1552721726",
