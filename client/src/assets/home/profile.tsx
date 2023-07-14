@@ -1,4 +1,4 @@
-function Profile({ className }: { className?: string }) {
+function ProfileLogo({ className }: { className?: string }) {
   return (
     <svg
       className={`svg-icon ${className}`}
@@ -7,7 +7,7 @@ function Profile({ className }: { className?: string }) {
       viewBox="0 0 20 20"
     >
       <path
-        fill="#fff"
+        fill="currentColor"
         d="M14.023,12.154c1.514-1.192,2.488-3.038,2.488-5.114c0-3.597-2.914-6.512-6.512-6.512
 		c-3.597,0-6.512,2.916-6.512,6.512c0,2.076,0.975,3.922,2.489,5.114c-2.714,1.385-4.625,4.117-4.836,7.318h1.186
 		c0.229-2.998,2.177-5.512,4.86-6.566c0.853,0.41,1.804,0.646,2.813,0.646c1.01,0,1.961-0.236,2.812-0.646
@@ -19,4 +19,4 @@ function Profile({ className }: { className?: string }) {
   );
 }
 
-export default Profile;
+export default ProfileLogo;

@@ -1,11 +1,8 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import imageOne from "../../assets/slider1.png";
-import imageTwo from "../../assets/slider2.png";
-import imageThree from "../../assets/slider3.png";
 
-const MySlider = () => {
+const MySlider = ({ image1, image2 }: { image1: string; image2: string }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -32,18 +29,19 @@ const MySlider = () => {
 
   return (
     <Slider {...settings}>
-      <div className="relative overflow-hidden">
+      <div className="flex justify-center w-full mx-[200px] ">
         <img
-          className="transition-transform duration-300 transform hover:scale-110"
-          src={imageOne}
+          className="transition-transform duration-300 transform hover:scale-[1.5]"
+          src={image1}
           alt="Slide 1"
         />
       </div>
-      <div>
-        <img src={imageTwo} alt="Slide 2" />
-      </div>
-      <div>
-        <img src={imageThree} alt="Slide 3" />
+      <div className="flex justify-center w-full mx-[200px]">
+        <img
+          src={image2}
+          alt="Slide 2"
+          className="transition-transform duration-300 transform hover:scale-[1.5]"
+        />
       </div>
     </Slider>
   );

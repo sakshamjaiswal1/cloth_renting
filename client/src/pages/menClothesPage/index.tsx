@@ -1,75 +1,19 @@
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import Header from "../../components/common/header";
+import { dataMen } from "./data";
+import { Link } from "react-router-dom";
 
 const MensClothesPage = () => {
-  const data = [
-    {
-      id: 1,
-      img1: "https://www.thestylease.com/cdn/shop/products/JR2_1634_295x.jpg?v=1560945208",
-      img2: "https://www.thestylease.com/cdn/shop/products/JR2_1642_295x.jpg?v=1560945230",
-      title: "Cream Bandgala",
-      by: "Prima Czar",
-    },
-    {
-      id: 2,
-      img1: "https://www.thestylease.com/cdn/shop/products/JR2_7099_295x.png?v=1554079960",
-      img2: "https://www.thestylease.com/cdn/shop/products/JR2_7111_295x.png?v=1554079974",
-      title: "Asymmetric Sherwani With Golden Dhoti Pants",
-      by: "Stylease Exclusive",
-    },
-    {
-      id: 1,
-      img1: "https://www.thestylease.com/cdn/shop/products/JR2_1634_295x.jpg?v=1560945208",
-      img2: "https://www.thestylease.com/cdn/shop/products/JR2_1642_295x.jpg?v=1560945230",
-      title: "Cream Bandgala",
-      by: "Prima Czar",
-    },
-    {
-      id: 2,
-      img1: "https://www.thestylease.com/cdn/shop/products/JR2_7099_295x.png?v=1554079960",
-      img2: "https://www.thestylease.com/cdn/shop/products/JR2_7111_295x.png?v=1554079974",
-      title: "Asymmetric Sherwani With Golden Dhoti Pants",
-      by: "Stylease Exclusive",
-    },
-    {
-      id: 1,
-      img1: "https://www.thestylease.com/cdn/shop/products/JR2_1634_295x.jpg?v=1560945208",
-      img2: "https://www.thestylease.com/cdn/shop/products/JR2_1642_295x.jpg?v=1560945230",
-      title: "Cream Bandgala",
-      by: "Prima Czar",
-    },
-    {
-      id: 2,
-      img1: "https://www.thestylease.com/cdn/shop/products/JR2_7099_295x.png?v=1554079960",
-      img2: "https://www.thestylease.com/cdn/shop/products/JR2_7111_295x.png?v=1554079974",
-      title: "Asymmetric Sherwani With Golden Dhoti Pants",
-      by: "Stylease Exclusive",
-    },
-    {
-      id: 1,
-      img1: "https://www.thestylease.com/cdn/shop/products/JR2_1634_295x.jpg?v=1560945208",
-      img2: "https://www.thestylease.com/cdn/shop/products/JR2_1642_295x.jpg?v=1560945230",
-      title: "Cream Bandgala",
-      by: "Prima Czar",
-    },
-    {
-      id: 2,
-      img1: "https://www.thestylease.com/cdn/shop/products/JR2_7099_295x.png?v=1554079960",
-      img2: "https://www.thestylease.com/cdn/shop/products/JR2_7111_295x.png?v=1554079974",
-      title: "Asymmetric Sherwani With Golden Dhoti Pants",
-      by: "Stylease Exclusive",
-    },
-  ];
   return (
     <>
       <Header />
       <div>
         {/* Image section */}
-        <div className="relative">
+        <div className="relative -mt-[140px]">
           <img
             src="https://www.thestylease.com/cdn/shop/collections/JR2_9594_1728x.jpg?v=1553605776"
             alt="Background Image"
-            className="w-full hfull-"
+            className="w-full h-[550px] object-cover"
           />
           <div className="absolute top-[80%] left-[25%] transform -translate-x-1/2 -translate-y-1/2 text-white text-[2.5rem] sm:text-[1rem] sm:left-[30%] font-bold shadow-lg">
             Mens Wear (All)
@@ -122,8 +66,12 @@ const MensClothesPage = () => {
 
           {/* Products mapping section */}
           <div className="w-[80%] grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 m-auto gap-[5rem]">
-            {data?.map((items) => (
-              <div key={items.id} className=" m-auto cursor-pointer">
+            {dataMen?.map((items) => (
+              <Link
+                to={`/singleProduct/men/${items.id}`}
+                key={items.id}
+                className=" m-auto cursor-pointer"
+              >
                 <div className="group inline-block relative">
                   <img
                     src={items.img1}
@@ -140,7 +88,7 @@ const MensClothesPage = () => {
                   {items.title}
                 </h1>
                 <p className="underline text-center">{items.by}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
