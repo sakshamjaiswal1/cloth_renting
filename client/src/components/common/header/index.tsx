@@ -1,14 +1,14 @@
-import cart from "../../../assets/home/cart.svg";
-import Profile from "../../../assets/home/profile";
-import search from "../../../assets/home/search.svg";
+import ProfileLogo from "../../../assets/home/profile";
+
 import logo from "../../../assets/home/jainLogo.png";
 import { useEffect, useState } from "react";
+import SearchLogo from "../../../assets/home/searchLogo";
+import CartLogo from "../../../assets/home/cartLogo";
 
 function Header({ className }: { className?: string }) {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   const handleScroll = () => {
-    console.log(window.scrollY);
     if (window.scrollY > 0) {
       setIsScrolled(true);
     } else {
@@ -25,8 +25,8 @@ function Header({ className }: { className?: string }) {
 
   return (
     <header
-      className={`${className} flex items-center justify-between w-full pl-[70px] pr-[30px] py-[30px] sticky top-0 z-[1] ${
-        isScrolled ? "bg-white" : ""
+      className={`${className} flex items-center justify-between w-full pl-[70px] pr-[30px]  sticky top-0 z-[1] ${
+        isScrolled ? "bg-white " : "py-[30px]"
       }  transition-all ease-in-out duration-300  `}
     >
       <div className="w-[206px] h-[80px]">
@@ -55,7 +55,7 @@ function Header({ className }: { className?: string }) {
       <ul className="flex items-center gap-x-[20px]">
         <li>
           {" "}
-          <Profile
+          <ProfileLogo
             className={`h-[30px] w-[30px]  ${
               isScrolled ? "text-black" : "text-white"
             }`}
@@ -63,19 +63,15 @@ function Header({ className }: { className?: string }) {
         </li>
         <li>
           {" "}
-          <img
-            src={search}
-            alt=""
+          <SearchLogo
             className={`h-[30px] w-[30px]  ${
               isScrolled ? "text-black" : "text-white"
             }`}
-          />{" "}
+          />
         </li>
         <li>
           {" "}
-          <img
-            src={cart}
-            alt=""
+          <CartLogo
             className={`h-[30px] w-[30px]  ${
               isScrolled ? "text-black" : "text-white"
             }`}

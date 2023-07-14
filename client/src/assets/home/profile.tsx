@@ -1,4 +1,4 @@
-function Profile({ className }: { className?: string }) {
+function ProfileLogo({ className }: { className?: string }) {
   return (
     <svg
       className={`svg-icon ${className}`}
@@ -19,4 +19,4 @@ function Profile({ className }: { className?: string }) {
   );
 }
 
-export default Profile;
+export default ProfileLogo;
