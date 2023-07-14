@@ -1,0 +1,58 @@
+export const dataWomen = [
+  {
+    id: 0,
+    img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
+    img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
+    title: "Yellow and Pink multi colored anarkali set",
+    by: "Manish Arora",
+  },
+  {
+    id: 1,
+    img1: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown1_295x.jpg?v=1617648772",
+    img2: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown2_1_295x.jpg?v=1617648772",
+    title: "Sea Green Embellished one shoulder Gown",
+    by: "Stylease Exclusive",
+  },
+  {
+    id: 2,
+    img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
+    img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
+    title: "Yellow and Pink multi colored anarkali set",
+    by: "Manish Arora",
+  },
+  {
+    id: 3,
+    img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
+    img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
+    title: "Yellow and Pink multi colored anarkali set",
+    by: "Manish Arora",
+  },
+  {
+    id: 4,
+    img1: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown1_295x.jpg?v=1617648772",
+    img2: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown2_1_295x.jpg?v=1617648772",
+    title: "Sea Green Embellished one shoulder Gown",
+    by: "Stylease Exclusive",
+  },
+  {
+    id: 5,
+    img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
+    img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
+    title: "Yellow and Pink multi colored anarkali set",
+    by: "Manish Arora",
+  },
+  {
+    id: 6,
+    img1: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown1_295x.jpg?v=1617648772",
+    img2: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown2_1_295x.jpg?v=1617648772",
+    title: "Sea Green Embellished one shoulder Gown",
+    by: "Stylease Exclusive",
+  },
+  {
+    id: 7,
+    img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
+    img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
+    title: "Yellow and Pink multi colored anarkali set",
+    by: "Manish Arora",
+  },
+];

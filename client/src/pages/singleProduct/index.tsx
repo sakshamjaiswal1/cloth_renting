@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -9,6 +9,9 @@ import Modal from "@mui/material/Modal";
 import MySlider from "../../components/slider";
 import Footer from "../../components/common/footer";
 import Header from "../../components/common/header";
+import { useLocation, useParams } from "react-router-dom";
+import { dataWomen } from "../womenClothesPage/data";
+import { dataMen } from "../menClothesPage/data";
 
 const style = {
   position: "absolute",
@@ -23,20 +26,34 @@ const style = {
 };
 
 const SingleProduct = () => {
+  const { id } = useParams();
+  const location = useLocation();
+
   const [open, setOpen] = React.useState(false);
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const currentData = useMemo(() => {
+    return location.pathname?.split("/")?.[2] === "women" ? dataWomen : dataMen;
+  }, [location.pathname]);
+
   return (
     <div className="h-full w-full">
       <Header className="text-black" />
       <div className="pt-[1rem] w-[80%] m-auto flex justify-between">
-        <div className="w-[50%]">
+        <div className="w-[50%] ">
           {" "}
-          <MySlider />
+          <MySlider
+            image1={currentData?.[parseInt(id || "")]?.img1}
+            image2={currentData?.[parseInt(id || "")]?.img2}
+          />
         </div>
         <div className="w-[50%] border-[1px solid red] ">
           <h3 className="underline">Stylease Exclusive</h3>
-          <h1 className="text-[2rem]">Black formal striped suit</h1>
+          <h1 className="text-[2rem]">
+            {currentData?.[parseInt(id || "")].title}
+          </h1>
           <h3 className="pt-[1rem] text-[1.5rem]">Rent: Rs. 3,500.00</h3>
           <h4>Refundable Deposit: Rs. 3,500.00</h4>
 

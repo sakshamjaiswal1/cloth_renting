@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../../components/common/footer";
 import Header from "../../components/common/header";
 import ChoiceSection from "../../components/home/choiceSection";
@@ -24,28 +25,38 @@ function Home() {
               The future of your <br /> wardrobe
             </h4>
             <div className="flex items-center gap-x-[20px] mt-[20px]">
-              <button className="px-[15px] py-[10px] text-[#000] bg-[#fff]  ">
+              <Link
+                to="/womenClothes"
+                className="px-[15px] py-[10px] text-[#000] bg-[#fff]  "
+              >
                 Rent Womens Wear
-              </button>
-              <button className="px-[15px] py-[10px] text-[#000] bg-[#fff]  ">
+              </Link>
+              <Link
+                to="/menClothes"
+                className="px-[15px] py-[10px] text-[#000] bg-[#fff]  "
+              >
                 Rent Mens Wear
-              </button>
+              </Link>
             </div>
           </section>
         </div>
       </section>
       <section className="flex pt-[20px] pb-[20px] px-[20px] gap-x-[20px]">
         <div>
-          <img
-            src="https://cdn.shopify.com/s/files/1/0086/9177/7632/files/For_Her_1080x.jpg?v=1613782301%22"
-            alt=""
-          />
+          <Link to="/womenClothes">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0086/9177/7632/files/For_Her_1080x.jpg?v=1613782301%22"
+              alt=""
+            />
+          </Link>
         </div>
         <div>
-          <img
-            src="https://cdn.shopify.com/s/files/1/0086/9177/7632/files/For_Him_1080x.jpg?v=1613782301"
-            alt=""
-          />
+          <Link to="/menClothes">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0086/9177/7632/files/For_Him_1080x.jpg?v=1613782301"
+              alt=""
+            />
+          </Link>
         </div>
       </section>
       <ChoiceSection />

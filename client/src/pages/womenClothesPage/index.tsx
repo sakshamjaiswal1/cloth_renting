@@ -1,65 +1,9 @@
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import Header from "../../components/common/header";
+import { dataWomen } from "./data";
+import { Link } from "react-router-dom";
 
 const WomenClothesPage = () => {
-  const data = [
-    {
-      id: 1,
-      img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
-      img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
-      title: "Yellow and Pink multi colored anarkali set",
-      by: "Manish Arora",
-    },
-    {
-      id: 2,
-      img1: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown1_295x.jpg?v=1617648772",
-      img2: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown2_1_295x.jpg?v=1617648772",
-      title: "Sea Green Embellished one shoulder Gown",
-      by: "Stylease Exclusive",
-    },
-    {
-      id: 3,
-      img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
-      img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
-      title: "Yellow and Pink multi colored anarkali set",
-      by: "Manish Arora",
-    },
-    {
-      id: 4,
-      img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
-      img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
-      title: "Yellow and Pink multi colored anarkali set",
-      by: "Manish Arora",
-    },
-    {
-      id: 5,
-      img1: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown1_295x.jpg?v=1617648772",
-      img2: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown2_1_295x.jpg?v=1617648772",
-      title: "Sea Green Embellished one shoulder Gown",
-      by: "Stylease Exclusive",
-    },
-    {
-      id: 6,
-      img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
-      img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
-      title: "Yellow and Pink multi colored anarkali set",
-      by: "Manish Arora",
-    },
-    {
-      id: 7,
-      img1: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown1_295x.jpg?v=1617648772",
-      img2: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown2_1_295x.jpg?v=1617648772",
-      title: "Sea Green Embellished one shoulder Gown",
-      by: "Stylease Exclusive",
-    },
-    {
-      id: 8,
-      img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
-      img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
-      title: "Yellow and Pink multi colored anarkali set",
-      by: "Manish Arora",
-    },
-  ];
   return (
     <>
       <Header />
@@ -122,8 +66,12 @@ const WomenClothesPage = () => {
 
           {/* Products mapping section */}
           <div className="w-[80%] grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 m-auto gap-[5rem]">
-            {data?.map((items) => (
-              <div key={items.id} className=" m-auto cursor-pointer">
+            {dataWomen?.map((items) => (
+              <Link
+                to={`/singleProduct/women/${items.id}`}
+                key={items.id}
+                className=" m-auto cursor-pointer"
+              >
                 <div className="group inline-block relative">
                   <img
                     src={items.img1}
@@ -140,7 +88,7 @@ const WomenClothesPage = () => {
                   {items.title}
                 </h1>
                 <p className="underline text-center">{items.by}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
