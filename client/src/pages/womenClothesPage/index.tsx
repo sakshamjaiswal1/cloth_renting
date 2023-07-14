@@ -18,13 +18,6 @@ const WomenClothesPage = () => {
       by: "Stylease Exclusive",
     },
     {
-      id: 1,
-      img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
-      img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
-      title: "Yellow and Pink multi colored anarkali set",
-      by: "Manish Arora",
-    },
-    {
       id: 3,
       img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
       img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
@@ -32,28 +25,35 @@ const WomenClothesPage = () => {
       by: "Manish Arora",
     },
     {
-      id: 2,
+      id: 4,
+      img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
+      img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
+      title: "Yellow and Pink multi colored anarkali set",
+      by: "Manish Arora",
+    },
+    {
+      id: 5,
       img1: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown1_295x.jpg?v=1617648772",
       img2: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown2_1_295x.jpg?v=1617648772",
       title: "Sea Green Embellished one shoulder Gown",
       by: "Stylease Exclusive",
     },
     {
-      id: 3,
+      id: 6,
       img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
       img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
       title: "Yellow and Pink multi colored anarkali set",
       by: "Manish Arora",
     },
     {
-      id: 2,
+      id: 7,
       img1: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown1_295x.jpg?v=1617648772",
       img2: "https://www.thestylease.com/cdn/shop/products/Seagreenembellishedoneshouldergown2_1_295x.jpg?v=1617648772",
       title: "Sea Green Embellished one shoulder Gown",
       by: "Stylease Exclusive",
     },
     {
-      id: 3,
+      id: 8,
       img1: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset_1_295x.jpg?v=1617648823",
       img2: "https://www.thestylease.com/cdn/shop/products/Yellowandpinkmulticoloredanarkaliset3_295x.jpg?v=1617648824",
       title: "Yellow and Pink multi colored anarkali set",
@@ -65,11 +65,11 @@ const WomenClothesPage = () => {
       <Header />
       <div>
         {/* Image section */}
-        <div className="relative">
+        <div className="-mt-[140px] relative">
           <img
             src="https://www.thestylease.com/cdn/shop/collections/JR2_3782_1728x.jpg?v=1553604185"
             alt="Background Image"
-            className="w-full hfull-"
+            className="w-full h-[550px] object-cover"
           />
           <div className="absolute top-[80%] left-[25%] transform -translate-x-1/2 -translate-y-1/2 text-white text-[2.5rem] sm:text-[1rem] sm:left-[30%] font-bold shadow-lg">
             Womens Wear on Rent

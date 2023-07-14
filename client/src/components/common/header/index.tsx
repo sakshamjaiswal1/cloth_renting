@@ -4,6 +4,7 @@ import logo from "../../../assets/home/jainLogo.png";
 import { useEffect, useState } from "react";
 import SearchLogo from "../../../assets/home/searchLogo";
 import CartLogo from "../../../assets/home/cartLogo";
+import { Link } from "react-router-dom";
 
 function Header({ className }: { className?: string }) {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -30,39 +31,41 @@ function Header({ className }: { className?: string }) {
       }  transition-all ease-in-out duration-300  `}
     >
       <div className="w-[206px] h-[80px]">
-        <img src={logo} alt="" className="h-full w-full" />
+        <Link to="/">
+          {" "}
+          <img src={logo} alt="" className="h-full w-full" />
+        </Link>
       </div>
       <ul
         className={`flex items-center gap-x-[20px] leading-[25px] text-[14px] tracking-[0px] ${
           isScrolled ? "text-black" : "text-white"
         } `}
       >
-        <li>
-          <a href="/womenClothes">WOMENS WEAR </a> <span className={``}></span>
+        <li className="hover:scale-105 hover:opacity-80  transition-all ease-in-out duration-300 ">
+          <Link to="/womenClothes">WOMENS WEAR</Link>
         </li>
-        <li>
-          <a href="/menClothes">MENS WEAR</a>
+        <li className="hover:scale-105 hover:opacity-80  transition-all ease-in-out duration-300 ">
+          <Link to="/menClothes">MENS WEAR</Link>
         </li>
-        <li>
-          {" "}
-          <a href="/aboutRentCause">RENT FOR CAUSE</a>
+        <li className="hover:scale-105 hover:opacity-80  transition-all ease-in-out duration-300 ">
+          <Link to="/aboutRentCause">RENT FOR CAUSE</Link>
         </li>
-        <li>
-          {" "}
-          <a href="">BLOG</a>
+        <li className="hover:scale-105 hover:opacity-80  transition-all ease-in-out duration-300 ">
+          <Link to="/menClothes">BLOG</Link>
         </li>
       </ul>
       <ul className="flex items-center gap-x-[20px]">
         <li>
-          {" "}
-          <ProfileLogo
-            className={`h-[30px] w-[30px]  ${
-              isScrolled ? "text-black" : "text-white"
-            }`}
-          />
+          <Link to="/register">
+            <ProfileLogo
+              className={`h-[30px] w-[30px]  ${
+                isScrolled ? "text-black" : "text-white"
+              }`}
+            />
+          </Link>
         </li>
         <li>
-          {" "}
+      
           <SearchLogo
             className={`h-[30px] w-[30px]  ${
               isScrolled ? "text-black" : "text-white"
@@ -70,12 +73,15 @@ function Header({ className }: { className?: string }) {
           />
         </li>
         <li>
-          {" "}
+ 
+          <Link to="/register">
           <CartLogo
             className={`h-[30px] w-[30px]  ${
               isScrolled ? "text-black" : "text-white"
             }`}
           />
+          </Link>
+         
         </li>
       </ul>
     </header>

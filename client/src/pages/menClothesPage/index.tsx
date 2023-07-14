@@ -18,42 +18,42 @@ const MensClothesPage = () => {
       by: "Stylease Exclusive",
     },
     {
-      id: 1,
+      id: 3,
       img1: "https://www.thestylease.com/cdn/shop/products/JR2_1634_295x.jpg?v=1560945208",
       img2: "https://www.thestylease.com/cdn/shop/products/JR2_1642_295x.jpg?v=1560945230",
       title: "Cream Bandgala",
       by: "Prima Czar",
     },
     {
-      id: 2,
+      id: 4,
       img1: "https://www.thestylease.com/cdn/shop/products/JR2_7099_295x.png?v=1554079960",
       img2: "https://www.thestylease.com/cdn/shop/products/JR2_7111_295x.png?v=1554079974",
       title: "Asymmetric Sherwani With Golden Dhoti Pants",
       by: "Stylease Exclusive",
     },
     {
-      id: 1,
+      id: 5,
       img1: "https://www.thestylease.com/cdn/shop/products/JR2_1634_295x.jpg?v=1560945208",
       img2: "https://www.thestylease.com/cdn/shop/products/JR2_1642_295x.jpg?v=1560945230",
       title: "Cream Bandgala",
       by: "Prima Czar",
     },
     {
-      id: 2,
+      id: 6,
       img1: "https://www.thestylease.com/cdn/shop/products/JR2_7099_295x.png?v=1554079960",
       img2: "https://www.thestylease.com/cdn/shop/products/JR2_7111_295x.png?v=1554079974",
       title: "Asymmetric Sherwani With Golden Dhoti Pants",
       by: "Stylease Exclusive",
     },
     {
-      id: 1,
+      id: 7,
       img1: "https://www.thestylease.com/cdn/shop/products/JR2_1634_295x.jpg?v=1560945208",
       img2: "https://www.thestylease.com/cdn/shop/products/JR2_1642_295x.jpg?v=1560945230",
       title: "Cream Bandgala",
       by: "Prima Czar",
     },
     {
-      id: 2,
+      id: 8,
       img1: "https://www.thestylease.com/cdn/shop/products/JR2_7099_295x.png?v=1554079960",
       img2: "https://www.thestylease.com/cdn/shop/products/JR2_7111_295x.png?v=1554079974",
       title: "Asymmetric Sherwani With Golden Dhoti Pants",
@@ -65,11 +65,11 @@ const MensClothesPage = () => {
       <Header />
       <div>
         {/* Image section */}
-        <div className="relative">
+        <div className="relative -mt-[140px]">
           <img
             src="https://www.thestylease.com/cdn/shop/collections/JR2_9594_1728x.jpg?v=1553605776"
             alt="Background Image"
-            className="w-full hfull-"
+            className="w-full h-[550px] object-cover"
           />
           <div className="absolute top-[80%] left-[25%] transform -translate-x-1/2 -translate-y-1/2 text-white text-[2.5rem] sm:text-[1rem] sm:left-[30%] font-bold shadow-lg">
             Mens Wear (All)
