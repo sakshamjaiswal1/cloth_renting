@@ -6,12 +6,13 @@ import Select from "@mui/material/Select";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import MySlider from "../../components/slider";
+
 import Footer from "../../components/common/footer";
 import Header from "../../components/common/header";
 import { useLocation, useParams } from "react-router-dom";
 import { dataWomen } from "../womenClothesPage/data";
 import { dataMen } from "../menClothesPage/data";
+import Carousel from "../../components/common/carousel";
 
 const style = {
   position: "absolute",
@@ -28,7 +29,29 @@ const style = {
 const SingleProduct = () => {
   const { id } = useParams();
   const location = useLocation();
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -44,10 +67,22 @@ const SingleProduct = () => {
       <div className="pt-[1rem] w-[80%] m-auto flex justify-between">
         <div className="w-[50%] ">
           {" "}
-          <MySlider
-            image1={currentData?.[parseInt(id || "")]?.img1}
-            image2={currentData?.[parseInt(id || "")]?.img2}
-          />
+          <Carousel settings={settings}>
+            <div className="flex justify-center w-full mx-[200px] ">
+              <img
+                className="transition-transform duration-300 transform hover:scale-[1.5]"
+                src={currentData?.[parseInt(id || "")]?.img1}
+                alt="Slide 1"
+              />
+            </div>
+            <div className="flex justify-center w-full mx-[200px]">
+              <img
+                src={currentData?.[parseInt(id || "")]?.img2}
+                alt="Slide 2"
+                className="transition-transform duration-300 transform hover:scale-[1.5]"
+              />
+            </div>
+          </Carousel>
         </div>
         <div className="w-[50%] border-[1px solid red] ">
           <h3 className="underline">Stylease Exclusive</h3>
