@@ -10,14 +10,14 @@ import {
 
 const CheckoutPage = () => {
   return (
-    <div>
+    <div className="">
       {/* Image section  */}
       <div className="w-full bg-gray-300 h-full object-cover">
         <div className="relative">
           <img
             src="https://cdn.shopify.com/s/files/1/0086/9177/7632/files/Womenswear_All_1440_13e92690-c76b-4fe9-af42-540af324c696_2000x.png?v=1613782322"
             alt="Wide Image"
-            className="w-full"
+            className="w-full h-[200px] object-cover"
           />
           <div className="absolute top-0 left-0 mt-8 ml-8 w-[206px] h-[80px]">
             <Link to="/">
@@ -29,15 +29,32 @@ const CheckoutPage = () => {
       </div>
 
       {/* checkout section  */}
-      <div className="flex gap-x-[2rem] bg-red h-full w-full border border.black">
-        <div className="pl-[3rem] py-[2rem] w-[50%]">
+      <div className="flex w-[90%] gap-x-[2rem] justify-between bg-red h-full m-auto">
+        <div className=" py-[2rem] w-[50%]">
           <p>Cart Information Shipping Payment</p>
-          <h2 className="font-medium py-[1rem]">Contact</h2>
-          <h2 className="font-medium py-[1rem]">Shipping address</h2>
+          <div>
+            <h2 className="font-semibold py-[1rem] text-[1.1rem] ">Contact</h2>
+            <p>Nitin sharma (yecami5187@muzitp.com)</p>
+          </div>
+          <h2 className="font-semibold py-[1rem] text-[1.1rem]">
+            Shipping address
+          </h2>
           <div className=" flex flex-col gap-y-4">
-            <div>
-              <TextField id="outlined-input" label="First name" />
-              <TextField id="outlined-input" label="Last name" />
+            <div className="flex justify-between">
+              <TextField
+                sx={{
+                  width: "278px",
+                }}
+                id="outlined-input"
+                label="First name"
+              />
+              <TextField
+                sx={{
+                  width: "278px",
+                }}
+                id="outlined-input"
+                label="Last name"
+              />
             </div>
             <TextField id="outlined-input" label="Company (optional)" />
             <TextField id="outlined-input" label="Address" />
@@ -45,9 +62,19 @@ const CheckoutPage = () => {
               id="outlined-input"
               label="Apartment, suite, etc. (optional)"
             />
-            <div className="flex ">
-              <TextField id="outlined-input" label="City" />
-              <FormControl fullWidth>
+            <div className="flex justify-between ">
+              <TextField
+                sx={{
+                  width: "180px",
+                }}
+                id="outlined-input"
+                label="City"
+              />
+              <FormControl
+                sx={{
+                  width: "180px",
+                }}
+              >
                 <InputLabel id="demo-simple-select-label">State</InputLabel>
                 <Select
                   labelId="demo-simple-select-label"
@@ -61,7 +88,13 @@ const CheckoutPage = () => {
                   <MenuItem value={30}>Bhihar</MenuItem>
                 </Select>
               </FormControl>
-              <TextField id="outlined-input" label="Pin code" />
+              <TextField
+                sx={{
+                  width: "180px",
+                }}
+                id="outlined-input"
+                label="Pin code"
+              />
             </div>
             <TextField id="outlined-input" label="Phone" />
             <div className="flex justify-between items-center ">
@@ -74,7 +107,7 @@ const CheckoutPage = () => {
         </div>
 
         {/* Price section */}
-        <div className="py-[2rem] w-[40%] pl-[1rem]">
+        <div className="py-[2rem] w-[40%]">
           <div className="flex justify-between h-auto w-full">
             <div>
               <img src="" alt="" />
@@ -98,7 +131,7 @@ const CheckoutPage = () => {
             </div>
             <p>₹3,500.00</p>
           </div>
-          <div className="w-full flex justify-between py-[2rem]">
+          <div className="w-full flex justify-between pb-[1rem]">
             <TextField
               sx={{ width: "350px" }}
               id="outlined-input"
@@ -107,6 +140,27 @@ const CheckoutPage = () => {
             <button className="py-[1rem] bg-black text-[white] px-[2rem] rounded">
               Apply
             </button>
+          </div>
+          <div className="flex justify-between pb-[0.3rem]">
+            <span>Subtotal</span>
+            <span>₹ 7,000.00</span>
+          </div>
+          <div className="flex justify-between items-center pb-[0.3rem]">
+            <span>Shipping</span>
+            <span className="text-[12px]">Calculated at next step</span>
+          </div>
+          <div className="flex justify-between pb-[0.3rem]">
+            <span>Estimated taxes</span>
+            <span>₹630.00</span>
+          </div>
+          <div className="flex justify-between ">
+            <span className="text-[1.1rem] font-semibold">Total</span>
+            <div className="flex items-center">
+              <span className="text-[rgba(108,108,108,1)] mr-[6px] text-[12px]">
+                INR
+              </span>
+              <span className="text-[1.1rem] font-semibold">₹630.00</span>
+            </div>
           </div>
         </div>
       </div>
