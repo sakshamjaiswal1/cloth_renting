@@ -8,6 +8,7 @@ import MensClothesPage from "./pages/menClothesPage";
 import AboutRentCause from "./pages/aboutRentCause";
 import LoginPage from "./pages/loginPage/loginPage";
 import RegisterPage from "./pages/registerPage/registerPage";
+import CheckoutPage from "./pages/checkoutPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/aboutRentCause" element={<AboutRentCause />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
     </div>
   );
